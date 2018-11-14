@@ -1,0 +1,9 @@
+
+<h2>Restaurants</h2>
+
+<% @restaurants.each do |r| %>
+<ul class = "list-unstyled list-inline">
+  <li><%= link_to r.name, "/restaurants/#{r.id}"%></li>
+<% end %>
+</ul>
+
